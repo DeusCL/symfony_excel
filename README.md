@@ -1,7 +1,7 @@
 # symfony_excel
 
 ## Prerrequisitos:
-- Antes de hacer funcionar este proyecto, primero debe cargar la base de datos `test_altos_ejecutivos` utilizando el script de Python de [este repositorio](https://github.com/DeusCL/pyexcel)
+- Antes de hacer funcionar este proyecto, primero debe cargar la base de datos `test_altos_ejecutivos` utilizando el script de Python de [este repositorio](https://github.com/DeusCL/pyexcel).
 
 
 ## Instalación:
