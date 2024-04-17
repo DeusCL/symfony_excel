@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cargos y Rentas{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h1>Cargos y Rentas</h1>
+
+        <select id="cargo-select">
+            <option value="0">Seleccione un cargo.</option>
+            {% for cargo in cargos %}
+                <option value="{{ cargo.id }}">{{ cargo.nombre }}</option>
+            {% endfor %}
+        </select>
+
+        <div id="renta-bruta"></div>
+    </div>
+
+
+    <script>
+        const rentaBrutaDiv = document.getElementById('renta-bruta');
+
+        document.getElementById('cargo-select').addEventListener('change', function() {
+            var cargoId = this.value;
+            if (cargoId !== "0") {
+                var rentas = {{ rentas|json_encode|raw }};
+                var rentaBruta = rentas[cargoId-1]['renta_bruta'];
+                rentaBrutaDiv.innerText = 'Renta Bruta: $' + rentaBruta;
+            } else {
+                rentaBrutaDiv.innerText = '';
+            }
+        });
+    </script>
+
+
+{% endblock %}
+
