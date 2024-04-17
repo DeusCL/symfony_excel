@@ -1,0 +1,20 @@
+body {
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#renta-bruta {
+    margin-top: 20px;
+}
