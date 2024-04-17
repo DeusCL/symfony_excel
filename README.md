@@ -1,8 +1,8 @@
-# symfonyexcel
+# symfony_excel
 
 ## Instalación:
-1) Clonar repositorio: `git clone https://github.com/DeusCL/symfonyexcel.git`
-2) Ir al directorio del proyecto: `cd symfonyexcel`
+1) Clonar repositorio: `git clone https://github.com/DeusCL/symfony_excel.git`
+2) Ir al directorio del proyecto: `cd symfony_excel`
 3) Instalar dependencias: `composer install`
 4) Configurar `DATABASE_URL` en el archivo `.env`
 5) Iniciar servidor local: `symfony serve`
