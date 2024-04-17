@@ -1,6 +1,7 @@
 # symfony_excel
 
 ## Prerrequisitos:
+- Tener PHP instalado
 - Tener XAMPP instalado
 - Tener MySQL instalado
 - Tener Composer instalado
